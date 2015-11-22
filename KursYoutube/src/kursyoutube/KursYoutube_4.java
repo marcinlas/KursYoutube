@@ -7,11 +7,18 @@ public class KursYoutube_4
     {
         int zmienna = 123;
         
-        while (zmienna <= 200) 
-    {
+        while (zmienna < 10) 
+        {   
         System.out.println("Zmienna = " + zmienna);
         zmienna += 10;
-    }
+        if (zmienna > 200)
+            break;
+        if (zmienna < 150)
+        continue;
+        System.out.println("Nie było pętli while");
+        }
+            
+            
     
     /*    
         if (zmienna == 12)
@@ -25,7 +32,7 @@ public class KursYoutube_4
         else if ((zmienna >= 12)||(zmienna < 100))
         {
             System.out.println("Jesteśmy w else if");
-        }
+        }00
         else
         {
            System.out.println("Powyższe warunki zostały spełnione!");
