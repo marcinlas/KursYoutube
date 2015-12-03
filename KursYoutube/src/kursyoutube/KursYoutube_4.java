@@ -7,6 +7,8 @@ public class KursYoutube_4
     {
         int zmienna = 10;
 
+        
+        //Typy prymitywne np. int, double, short, byte porównujemy przez "=="
         if (zmienna == 10)
         {
 
@@ -20,6 +22,14 @@ public class KursYoutube_4
 
         }
         switch (zmienna)
+        
+        String imie = "Burek";
+        
+        //Typy obiektowne np. String, Integer, Drawable porównujemy przez metode "isEqual()"
+        if (imie.isEqual("Burek"){}; //Zwraca "tak"
+        if (imie == "Burek"){}; //Bedzie error
+        
+        
         {
             case 1:
                 break;
