@@ -25,6 +25,7 @@ public class KursYoutube_5
         frame.setLocation(300,300);  // pojawienie się 300pix od góry i dołu
         frame.setResizable(false); // nie rozszerzanie się okna
         frame.setLayout(null);  // sami ustawimy w którym miejscu co ma być
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  // uwalnianie aplikacji z pamięci
         
         tf = new JTextField("");  // tworzenie miejsca działań
         tf.setBounds(10, 10, 230, 50); // ustawienie w odpowiednim miejscu
