@@ -1,24 +1,23 @@
 
 package kursyoutube;
 
+import java.math.BigInteger;
+
 public class KursYoutube_9 
 {
     public static void main(String[] args)
     {
-        for (int i=1; i<100;i++)
+        for (int i=1; i<=1000;i++)
         {
-            System.out.println(silnia(i));
+            System.out.println("Silnia z liczby " + i + " wynosi: " + silnia(BigInteger.valueOf(1)));
         }
     }
-    public static long silnia(long liczba)
+    public static BigInteger silnia(BigInteger liczba)
     {
-        long wynik = 1;
-        while (liczba > 1) 
+        if (liczba.compareTo(BigInteger.valueOf(1))==1)
         {
-            wynik *= liczba;
-            liczba--;
+            liczba = liczba.multiply(silnia(liczba.subtract(BigInteger.valueOf(1))));
         }
-        return wynik;
+        return liczba;
     }
-    
 }
